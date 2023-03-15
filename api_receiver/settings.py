@@ -25,7 +25,7 @@ SECRET_KEY = '#z97mtqxzi0kcqry61+oyn^aq8h3g=er_^7r@t)aldv%_xb++1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api-receiver.onrender.com']
 
 
 # Application definition
