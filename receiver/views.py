@@ -12,7 +12,8 @@ def visualizer(request):
 
 def index(request):
     to_return = "Hello, this is your body: "
-    if last_body := Body.objects.last():
+    last_body = Body.objects.last()
+    if last_body:
         to_return += str(last_body)
     print(to_return)
     return HttpResponse(to_return)
