@@ -6,8 +6,8 @@ from .models import Body
 from .serializers import BodySerializer
 
 
-def visualizer(request):
-    return HttpResponse("Hello world!")
+# def visualizer(request):
+#     return HttpResponse("Hello world!")
 
 
 def index(request):
