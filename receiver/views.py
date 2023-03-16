@@ -13,7 +13,7 @@ from .serializers import BodySerializer
 def index(request):
     to_return = "Hello, this is your body: "
     last_body = Body.objects.last()
-    count = Body.objects.acount()
+    count = Body.objects.count()
     if last_body:
         to_return += str(last_body)
     to_return += f" [{str(count)}]"
