@@ -13,8 +13,10 @@ def visualizer(request):
 def index(request):
     to_return = "Hello, this is your body: "
     last_body = Body.objects.last()
+    count = Body.objects.acount()
     if last_body:
         to_return += str(last_body)
+    to_return += f" [{str(count)}]"
     print(to_return)
     return HttpResponse(to_return)
 
